@@ -1,0 +1,52 @@
+1).1. List 5 difference between Browser JS(console) v Nodejs
+
+a). Browser JS(console)
+*   “window” is a predefined global object which has functions and attributes, that have to deal with window that has been drawn.
+*   “location” is another predefined object in browsers, that has all the information about the url we have loaded.
+*   “document”, which is also another predefined global variable in browsers, has the html which is rendered.
+*   Browsers may have an object named “global”, but it will be the exact one as “window”.
+*   Browsers don’t have “require” predefined. You may include it in your app for asynchronous file loading.
+*   Moduling is not mandatory in client side JavaScript, i.e. in browsers.
+
+b). Nodejs
+
+*   Node doesn’t have a predefined “window” object cause it doesn’t have a window to draw anything.
+*   “location” object is related to a particular url; that means it is for page specific. So, node doesn’t require that.
+*    Ofcourse Node doesn’t have “document” object also, cause it never have to render anything in a page.
+*   Node has “global”, which is a predefined global object. It contains several functions that are not available in browsers, cause they are needed for server side works only.
+*   “require” object is predefined in Node which is used to include modules in the app.
+
+
+
+2). watch and summary 5 points form the youtube video
+
+a).High level flow=> two process where it parse html and css and then to render tree
+b)parsing html
+  1.1)html is forgiving by nature
+  1.2)parsing is not straight forward
+  1.30 will do speculative paprsing
+c).two types of tags are used in html code
+   1.1) start tag contains : <-tag open : div - tag name : > tag close 
+   1.2) end tag contains : </-tag open : div - tag name : > tag close
+d).speculative parsing 
+   1.1)will look ahead
+   1.2)external images,script,css
+e).reentrant means the parsing process can be interrupted
+f).Multiple trees
+   1.1)Render objects
+   1.2)Render styles
+   1.3)Render layers
+   1.4)line boxes
+
+
+
+4). execute below code write u r description in text file
+	(a).	typeof(1) =>	   number	
+    	(b).	typeof(1.1) =>	   number	
+	(c).	typeof("1") =>	   string
+	(d).	typeof(true) =>	   boolean
+	(e).	typeof(null) =>	   object	
+	(f).	typeof(undefined) =>undefined 
+	(g).	typeof([]) =>	   object	 	
+	(h).	typeof({}) =>	   object		
+	(i).	typeof(NaN) =>	   number	
